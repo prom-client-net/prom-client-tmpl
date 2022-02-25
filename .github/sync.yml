@@ -4,8 +4,8 @@ group:
         dest: .github/
         deleteOrphaned: true
         exclude: |
-           sync-files.yml
            sync.yml
+           workflows/sync-files.yml
     repos: |
       prom-client-net/prom-client
       prom-client-net/prom-client-dependencyinjection
