@@ -11,3 +11,15 @@ group:
       prom-client-net/prom-client-aspnetcore
       prom-client-net/prom-client-metricpusher
       prom-client-net/prom-client-metricserver
+  - files:
+      - source: .github/
+        dest: .github/
+        exclude: sync.yml
+    repos: |
+      prom-client-net/prom-client
+      prom-client-net/prom-client-dependencyinjection
+      prom-client-net/prom-client-healthchecks
+      prom-client-net/prom-client-httprequestdurations
+      prom-client-net/prom-client-aspnetcore
+      prom-client-net/prom-client-metricpusher
+      prom-client-net/prom-client-metricserver
