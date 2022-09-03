@@ -1,5 +1,7 @@
 # prom-tmpl
 
+[![Sync Files](https://img.shields.io/github/workflow/status/prom-client-net/prom-tmpl/%F0%9F%93%81%20Sync%20Files?label=%20Sync%20Files&logo=github)](https://github.com/prom-client-net/prom-tmpl/actions/workflows/sync-files.yml)
+
 ## Contribute
 
 Contributions to the package are always welcome!
