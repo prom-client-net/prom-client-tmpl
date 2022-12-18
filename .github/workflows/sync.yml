@@ -3,10 +3,11 @@ name: 📁 Sync Files
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   sync-files:
+    name: 🔄 Sync Files
     runs-on: ubuntu-22.04
     steps:
       - name: 🚚 Checkout

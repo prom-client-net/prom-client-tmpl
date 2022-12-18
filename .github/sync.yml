@@ -5,7 +5,7 @@ group:
         deleteOrphaned: true
         exclude: |
           sync.yml
-          workflows/sync-files.yml
+          workflows/sync.yml
       - source: stylecop.json
         dest: stylecop.json
       - source: .editorconfig

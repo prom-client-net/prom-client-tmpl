@@ -1,10 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 
-rm src/dummy
-rm tests/dummy
+rm src/.gitkeep
+rm tests/.gitkeep
 
-
-proj_name=${PWD##*/} 
+proj_name=${PWD##*/}
 sed -i "s/prom-tmpl/${proj_name}/g" README.md
 
 rm run-me.sh

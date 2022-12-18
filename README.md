@@ -1,6 +1,7 @@
 # prom-tmpl
 
-[![Sync Files](https://img.shields.io/github/workflow/status/prom-client-net/prom-tmpl/%F0%9F%93%81%20Sync%20Files?label=%20Sync%20Files&logo=github)](https://github.com/prom-client-net/prom-tmpl/actions/workflows/sync-files.yml)
+[![sync](https://img.shields.io/github/actions/workflow/status/prom-client-net/prom-tmpl/ci.yml?branch=main&label=ci&logo=github&style=flat-square)](https://github.com/prom-client-net/prom-tmpl/actions/workflows/sync.yml)
+[![license](https://img.shields.io/github/license/prom-client-net/prom-tmpl?style=flat-square)](https://github.com/prom-client-net/prom-tmpl/blob/main/LICENSE)
 
 ## Contribute
 
