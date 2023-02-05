@@ -28,5 +28,6 @@ group:
       prom-client-net/prom-client-healthchecks
       prom-client-net/prom-client-httprequestdurations
       prom-client-net/prom-client-aspnetcore
-      prom-client-net/prom-client-metricpusher
       prom-client-net/prom-client-metricserver
+      prom-client-net/prom-client-metricpusher
+      prom-client-net/prom-client-metricpusher-hostedservice
