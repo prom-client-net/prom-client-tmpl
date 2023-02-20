@@ -13,11 +13,12 @@ jobs:
       - name: 🚚 Checkout
         uses: actions/checkout@v3
       - name: 📁 Synchronization
-        uses: BetaHuhn/repo-file-sync-action@v1.21.0 # https://github.com/BetaHuhn/repo-file-sync-action/issues/276
+        uses: BetaHuhn/repo-file-sync-action@v1.21.0
         with:
           GH_PAT: ${{ secrets.GH_FULL_PAT }}
           COMMIT_PREFIX: "chore:"
           ORIGINAL_MESSAGE: true
+          COMMIT_EACH_FILE: false
           SKIP_PR: true
           GIT_USERNAME: phnx47[bot]
           GIT_EMAIL: 78849906+phnx47-bot@users.noreply.github.com
