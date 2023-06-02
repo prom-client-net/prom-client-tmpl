@@ -16,8 +16,6 @@ group:
         dest: .gitignore
       - source: Directory.Build.props
         dest: Directory.Build.props
-      - source: LICENSE
-        dest: LICENSE
       - source: icon.png
         dest: icon.png
       - source: .ruleset
