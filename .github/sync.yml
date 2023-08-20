@@ -30,3 +30,4 @@ group:
       prom-client-net/prom-client-metricserver
       prom-client-net/prom-client-metricpusher
       prom-client-net/prom-client-metricpusher-hostedservice
+      prom-client-net/prom-client-owin
