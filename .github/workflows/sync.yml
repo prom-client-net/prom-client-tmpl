@@ -19,6 +19,5 @@ jobs:
           COMMIT_PREFIX: "chore:"
           ORIGINAL_MESSAGE: true
           COMMIT_EACH_FILE: false
-          SKIP_PR: true
           GIT_USERNAME: phnx47[bot]
           GIT_EMAIL: 78849906+phnx47-bot@users.noreply.github.com
