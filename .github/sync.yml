@@ -32,8 +32,12 @@ group:
       prom-client-net/prom-client-metricpusher-hostedservice
 
   - files:
-      - source: workflows/automerge.yml
-        dest:  workflows/automerge.yml
+      - source: .github/
+        dest: .github/
+        exclude: |
+          ci.yml
+          sync.yml
+          workflows/sync.yml
       - source: stylecop.json
         dest: stylecop.json
       - source: .editorconfig
