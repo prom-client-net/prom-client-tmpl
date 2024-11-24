@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   sync-files:
@@ -13,10 +14,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Synchronization
-        uses: BetaHuhn/repo-file-sync-action@v1.21.1
+        uses: BetaHuhn/repo-file-sync-action@v1
         with:
           GH_PAT: ${{ secrets.GH_FULL_PAT }}
-          COMMIT_PREFIX: "chore:"
+          COMMIT_PREFIX: "sync:"
           ORIGINAL_MESSAGE: true
           COMMIT_EACH_FILE: false
           GIT_USERNAME: phnx47[bot]
