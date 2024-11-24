@@ -4,7 +4,7 @@ group:
         dest: .github/
         deleteOrphaned: true
         exclude: |
-          sync.yml
+          sync-config.yml
           workflows/sync.yml
       - source: stylecop.json
         dest: stylecop.json
@@ -35,7 +35,7 @@ group:
       - source: .github/
         dest: .github/
         exclude: |
-          sync.yml
+          sync-config.yml
           settings.yml
           workflows/ci.yml
           workflows/sync.yml
