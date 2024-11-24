@@ -9,6 +9,7 @@ on:
 jobs:
   sync-files:
     name: Sync Files
+    if: github.repository == 'prom-client-net/prom-client-tmpl'
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
