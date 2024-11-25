@@ -20,6 +20,7 @@ jobs:
           GH_PAT: ${{ secrets.GH_FULL_PAT }}
           CONFIG_PATH: .github/sync-config.yml
           COMMIT_PREFIX: "sync:"
+          BRANCH_PREFIX: "sync/SOURCE_REPO_NAME"
           ORIGINAL_MESSAGE: true
           COMMIT_EACH_FILE: false
           GIT_USERNAME: phnx47[bot]
