@@ -37,8 +37,8 @@ group:
         exclude: |
           sync-config.yml
           settings.yml
-          workflows/ci-linux.yml
-          workflows/ci-windows.yml
+          workflows/ci.yml
+          workflows/ci-win.yml
           workflows/sync.yml
       - source: stylecop.json
         dest: stylecop.json
