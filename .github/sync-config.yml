@@ -36,9 +36,8 @@ group:
         dest: .github/
         exclude: |
           sync-config.yml
-          settings.yml
-          workflows/ci.yml
-          workflows/ci-win.yml
+          workflows/build.yml
+          workflows/build-win.yml
           workflows/sync.yml
       - source: stylecop.json
         dest: stylecop.json
