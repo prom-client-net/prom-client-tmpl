@@ -35,6 +35,7 @@ group:
       - source: .github/
         dest: .github/
         exclude: |
+          settings.yml
           sync-config.yml
           workflows/build.yml
           workflows/build-win.yml
