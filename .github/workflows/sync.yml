@@ -17,7 +17,7 @@ jobs:
       - name: Synchronization
         uses: BetaHuhn/repo-file-sync-action@v1
         with:
-          GH_PAT: ${{ secrets.GH_FULL_PAT }}
+          GH_PAT: ${{ secrets.GH_PAT }}
           ASSIGNEES: phnx47
           COMMIT_PREFIX: "chore:"
           BRANCH_PREFIX: "sync/SOURCE_REPO_NAME"
