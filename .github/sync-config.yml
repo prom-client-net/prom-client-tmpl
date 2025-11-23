@@ -35,10 +35,8 @@ group:
       - source: .github/
         dest: .github/
         exclude: |
-          settings.yml
           sync-config.yml
           workflows/build.yml
-          workflows/build-win.yml
           workflows/sync.yml
       - source: stylecop.json
         dest: stylecop.json
