@@ -1,11 +1,6 @@
 group:
+  # Group 1: Sync config files to all repos
   - files:
-      - source: .github/
-        dest: .github/
-        deleteOrphaned: true
-        exclude: |
-          sync-config.yml
-          workflows/sync.yml
       - source: stylecop.json
         dest: stylecop.json
       - source: .editorconfig
@@ -30,27 +25,34 @@ group:
       prom-client-net/prom-client-metricserver
       prom-client-net/prom-client-metricpusher
       prom-client-net/prom-client-metricpusher-hostedservice
+      prom-client-net/prom-client-owin
 
+  # Group 2: Sync .github/ folder to all repos except prom-client-owin (with deleteOrphaned)
+  - files:
+      - source: .github/
+        dest: .github/
+        deleteOrphaned: true
+        exclude: |
+          sync-config.yml
+          workflows/sync.yml
+    repos: |
+      prom-client-net/prom-client
+      prom-client-net/prom-client-dependencyinjection
+      prom-client-net/prom-client-healthchecks
+      prom-client-net/prom-client-httpclient
+      prom-client-net/prom-client-httprequestdurations
+      prom-client-net/prom-client-aspnetcore
+      prom-client-net/prom-client-metricserver
+      prom-client-net/prom-client-metricpusher
+      prom-client-net/prom-client-metricpusher-hostedservice
+
+  # Group 3: Sync .github/ folder to prom-client-owin (excludes build.yml, no deleteOrphaned)
   - files:
       - source: .github/
         dest: .github/
         exclude: |
           sync-config.yml
-          workflows/build.yml
           workflows/sync.yml
-      - source: stylecop.json
-        dest: stylecop.json
-      - source: .editorconfig
-        dest: .editorconfig
-      - source: .gitattributes
-        dest: .gitattributes
-      - source: .gitignore
-        dest: .gitignore
-      - source: Directory.Build.props
-        dest: Directory.Build.props
-      - source: icon.png
-        dest: icon.png
-      - source: .ruleset
-        dest: .ruleset
+          workflows/build.yml
     repos: |
       prom-client-net/prom-client-owin
