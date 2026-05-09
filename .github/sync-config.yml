@@ -56,3 +56,19 @@ group:
           workflows/build.yml
     repos: |
       prom-client-net/prom-client-owin
+
+    # Group 4: Sync LICENSE to all repos except prom-client
+  - files:
+      - source: LICENSE
+        dest: LICENSE
+    repos: |
+      prom-client-net/prom-client-examples
+      prom-client-net/prom-client-dependencyinjection
+      prom-client-net/prom-client-healthchecks
+      prom-client-net/prom-client-httpclient
+      prom-client-net/prom-client-httprequestdurations
+      prom-client-net/prom-client-aspnetcore
+      prom-client-net/prom-client-metricserver
+      prom-client-net/prom-client-metricpusher
+      prom-client-net/prom-client-metricpusher-hostedservice
+      prom-client-net/prom-client-owin
